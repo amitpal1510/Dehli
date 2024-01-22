@@ -1,0 +1,63 @@
+body{
+    padding: 0;
+    margin: 0;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+
+}
+
+.header{
+    display: flex;
+}
+
+.menu> ul> li:hover >.sab-menu{
+    visibility: visible;
+    top: 50px;
+    opacity: 1;
+}
+
+.sab-menu{
+    width: 150px;
+    background-color: blue;
+    visibility: hidden;
+    top: -100%;
+    left: 0;
+    transition: all 0.3s;
+    padding: 20px;
+    opacity: 0;
+}
+
+.menu> ul> li a:hover{
+    text-decoration: none;
+}
+
+.menu> ul> li::after{
+    width:0;
+    height: 4px;
+    background-color: red;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    content: "";
+    transition: all 0.3s;
+}
+.menu> ul> li:hover::after{
+    width: 100%;
+
+}
+.menu > ul> li> a{
+    padding: 48px 0;
+}
+
+.menu ul li{
+}
+
